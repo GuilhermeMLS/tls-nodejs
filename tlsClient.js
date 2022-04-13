@@ -3,9 +3,9 @@
 
 const CLIENT_PORT = 8000;
 const CLIENT_HOST = 'localhost';
-const CLIENT_KEY_PATH = 'certs/client/client.key';
-const CLIENT_CERTIFICATE_PATH = 'certs/client/client.crt';
-const AUTORITY_CERTIFICATE_PATH = 'certs/ca/ca.crt';
+const CLIENT_KEY_PATH = 'certificates/clientCertificate/clientCertificate.key';
+const CLIENT_CERTIFICATE_PATH = 'certificates/clientCertificate/clientCertificate.crt';
+const AUTORITY_CERTIFICATE_PATH = 'certificates/caCertificate/caCertificate.crt';
 const DEFAULT_ENCODING = 'utf8';
 
 const tlsModule = require('tls');

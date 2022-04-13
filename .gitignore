@@ -1,4 +1,7 @@
-#IDE
+# Domain
+certificates/
+
+# IDE
 .idea/
 
 # Logs

@@ -4,9 +4,9 @@
 const fileSystem = require('fs');
 const tlsModule = require('tls');
 const SERVER_PORT = 8000;
-const SERVER_KEY_PATH = 'certs/server/server.key';
-const SERVER_CERTIFICATE_PATH = 'certs/server/server.crt';
-const AUTORITY_CERTIFICATE_PATH = 'certs/ca/ca.crt';
+const SERVER_KEY_PATH = 'certificates/serverCertificate/serverCertificate.key';
+const SERVER_CERTIFICATE_PATH = 'certificates/serverCertificate/serverCertificate.crt';
+const AUTORITY_CERTIFICATE_PATH = 'certificates/caCertificate/caCertificate.crt';
 const DEFAULT_ENCODING = 'utf8';
 
 const secureConnectionListener = (tlsSocket) => {
