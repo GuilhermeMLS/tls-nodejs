@@ -1,4 +1,11 @@
 # tls-nodejs
-A TLS based client-server connection
+A TLS-based client-server connection self-signing the certificates using OpenSSL. 
 
-Lembrar de colocar que é necessário o `openssl`
+## Running
+Install [OpenSSL](https://www.openssl.org), then:
+```sh
+$ setup.sh
+$ node tlsServer.js
+$ node tlsClient.js # in another terminal window
+```
+You should be able to see the execution logs at the terminal windows.
