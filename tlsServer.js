@@ -26,9 +26,9 @@ const tlsServer = tlsModule.createServer(
     tlsOptions,
     secureConnectionListener,
 ).on('connection', () => { console.log('Conexão insegura estabelecida'); })
-    .on('secureConnection', (TLSSocket) => {
+    .on('secureConnection', (tlsSocket) => {
         console.log('Conexão segura estabelecida')
-        console.log('Client autorizado: ', TLSSocket.authorized);
+        console.log('Client autorizado: ', tlsSocket.authorized);
     })
     .listen(SERVER_PORT, () => {
         console.log('Servidor TLS escutando na porta ' + SERVER_PORT + '\n');

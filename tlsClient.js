@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict';
 
-const CLIENT_PORT = 8000;
-const CLIENT_HOST = 'localhost';
+const SERVER_PORT = 8000;
+const SERVER_HOST = 'localhost';
 const CLIENT_KEY_PATH = 'certificates/clientCertificate/clientCertificate.key';
 const CLIENT_CERTIFICATE_PATH = 'certificates/clientCertificate/clientCertificate.crt';
 const AUTORITY_CERTIFICATE_PATH = 'certificates/caCertificate/caCertificate.crt';
@@ -25,8 +25,8 @@ const secureConnectionListener = () => {
 };
 
 const tlsOptions = {
-    port: CLIENT_PORT,
-    host: CLIENT_HOST,
+    port: SERVER_PORT,
+    host: SERVER_HOST,
     key: fileSystem.readFileSync(CLIENT_KEY_PATH),
     ca: fileSystem.readFileSync(AUTORITY_CERTIFICATE_PATH),
     cert: fileSystem.readFileSync(CLIENT_CERTIFICATE_PATH)
